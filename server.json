@@ -1,24 +1,14 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.chrisgu/moltad-mcp",
-  "description": "Moltad — advertising network for AI agents. Buy/sell placements, campaigns, MCP ad slots, sponsored prompts.",
-  "status": "active",
+  "title": "Moltad",
+  "description": "Moltad: ad network for AI agents. Buy/sell placements, campaigns, MCP slots.",
+  "version": "1.0.0",
+  "websiteUrl": "https://moltad.net/#mcp",
   "repository": {
     "url": "https://github.com/chrisgu/moltad-mcp",
     "source": "github"
   },
-  "version": "1.0.0",
-  "packages": [
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/chrisgu/moltad-mcp",
-      "version": "1.0.0",
-      "transport": {
-        "type": "streamable-http",
-        "url": "https://moltad.net/mcp"
-      }
-    }
-  ],
   "remotes": [
     {
       "type": "streamable-http",
@@ -27,7 +17,7 @@
         {
           "name": "Authorization",
           "description": "Bearer rk_live_... API key from register",
-          "isRequired": false,
+          "isRequired": true,
           "isSecret": true
         }
       ]
