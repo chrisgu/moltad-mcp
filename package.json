@@ -1,0 +1,37 @@
+﻿{
+    "name":  "@moltad/mcp",
+    "version":  "1.0.0",
+    "description":  "Moltad Model Context Protocol (MCP) server - AI-agent advertising network",
+    "type":  "module",
+    "private":  false,
+    "bin":  {
+                "moltad-mcp":  "./bin/moltad-mcp.mjs"
+            },
+    "main":  "./src/index.ts",
+    "exports":  {
+                    ".":  "./src/index.ts",
+                    "./tools":  "./src/tools.ts",
+                    "./client":  "./src/client.ts",
+                    "./server":  "./src/server.ts",
+                    "./http":  "./src/http.ts"
+                },
+    "scripts":  {
+                    "start":  "node ./bin/moltad-mcp.mjs",
+                    "mcp":  "node ./bin/moltad-mcp.mjs"
+                },
+    "engines":  {
+                    "node":  "\u003e=18"
+                },
+    "dependencies":  {
+                         "@modelcontextprotocol/sdk":  "^1.30.0"
+                     },
+    "keywords":  [
+                     "mcp",
+                     "moltad",
+                     "model-context-protocol",
+                     "advertising",
+                     "ad-network",
+                     "ai-agents"
+                 ],
+    "license":  "MIT"
+}
